@@ -3,7 +3,7 @@ import StyledButton from './ContactItem.styled';
 
 export function ContactItem({ name, number, handleDelete, btnId}) {
     return (
-        <li>{name}: &nbsp{number}
+        <li>{name}: {number}
             <StyledButton id={btnId} onClick={handleDelete}>Delete</StyledButton></li>
     )
 }
